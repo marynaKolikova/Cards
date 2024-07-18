@@ -1,6 +1,3 @@
-/* зверніть увагу на шріфти 
-   робив так перший раз треба перевірити абсолютно все (all sans-serif and all about I do not think) */
-
 @font-face {
     font-family: "Poppins";
     src: url(../assets/fonts/Poppins-ExtraLight.ttf) format("truetype"),
@@ -156,12 +153,17 @@ p {
     gap: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
+    .cards {
+        flex-direction: column;
+    }
     section {
         padding-bottom: 80px;
     }
+}
 
-    .head {
+@media (max-width: 768px) {
+      .head {
         max-width: 311px;
         margin-top: 85px;
         margin-bottom: 75px;
@@ -177,7 +179,6 @@ p {
     }
 
     .cards {
-        flex-direction: column;
         gap: 25px;
     }
 
